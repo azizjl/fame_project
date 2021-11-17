@@ -1,0 +1,77 @@
+.MoviePlayer {
+  /* width: 80%;
+  margin: 0 auto;
+  margin-top: -20px;
+  padding-top: 130px; */
+  background: #260000;
+  height: 100vh;
+}
+
+.movieWaitWrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 180px;
+}
+
+.movieWaitWrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(to top, #000000, transparent);
+  z-index: 3;
+  transform: translate(0, 3px);
+}
+
+.movieWaitWrapper span {
+  color: white;
+  z-index: 9;
+}
+
+.logoMovieWait {
+  width: 300px;
+  z-index: 9;
+}
+
+.peoples {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 9;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.people img {
+  width: 130px;
+  object-fit: cover;
+  height: 130px;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}
+
+.people video {
+  width: 190px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}
+
+.updatePdp {
+  padding: 15px 15px 15px 23px;
+  font-weight: bold;
+  margin-top: 20px;
+  background: rgb(155, 2, 2);
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}

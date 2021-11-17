@@ -1,0 +1,136 @@
+.App {
+  background: #260000;
+
+  height: 100vh;
+}
+
+.logo {
+  position: fixed;
+  width: 358px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  transition: top 2s ease-in-out, width 2s ease-in-out, left 2s ease-in-out;
+  cursor: pointer;
+  animation: flickerAnimation 5s infinite;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    filter: brightness(1);
+  }
+  20% {
+    filter: brightness(0.2);
+  }
+  40% {
+    -o-animation-timing-function: steps(1, end);
+    filter: brightness(1);
+  }
+  60% {
+    filter: brightness(1.2);
+  }
+  80% {
+    filter: brightness(0.7);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.uperIndex {
+  z-index: 9999999999;
+}
+
+.Recorder {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoPreview {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.videos {
+  /* position: relative;
+  top: 50%;
+  left: 50%; */
+}
+
+.videos video {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.Recorder .btns {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* chat */
+
+.chat {
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chatWrapper {
+  /* border: 2px solid white; */
+  padding: 20px;
+  width: 250px;
+}
+.chatBox {
+  margin-top: auto;
+  height: 5%;
+  display: flex;
+  border-top: 2px solid white;
+  padding-top: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.chatBox button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.chatBox input {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  width: 100%;
+}
+
+.messages {
+  height: 95%;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-x: auto;
+  text-align: right;
+}
+
+.message {
+  margin-top: 10px;
+}
+
+.sendBtn {
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 30px;
+  /* transform: translateY(40px); */
+}
+.Header span {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.profilImg img {
+  width: 50px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+
+.Header .right,
+.left,
+.profilImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilImg {
+  font-weight: bold;
+}

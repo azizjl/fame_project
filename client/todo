@@ -1,0 +1,26 @@
+{/* <div
+          autoPlay={secondtMovie}
+          onMouseOver={() => setSecondtMovie(true)}
+          onMouseOut={() => setSecondtMovie(false)}
+          style={
+            secondtMovie
+              ? { transform: "scale(1.5)" }
+              : { transform: "scale(1)" }
+          }
+          className={secondtMovie ? "movie shadow" : "movie"}>
+          <video ref={second_video} controls={false} src="video.mp4"></video>
+          <span>Fast and furious</span>
+        </div>
+        <div
+          autoPlay={thirdMovie}
+          onMouseOver={() => setThirdMovie(true)}
+          onMouseOut={() => setThirdMovie(false)}
+          style={
+            thirdMovie
+              ? { transform: "scale(1.5) translate(-80%, 0px)" }
+              : { transform: "scale(1)" }
+          }
+          className={thirdMovie ? "movie shadow" : "movie"}>
+          <video ref={third_video} controls={false} src="TR.mp4"></video>
+          <span>The notebook</span>
+        </div> */}
